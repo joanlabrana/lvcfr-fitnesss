@@ -3,18 +3,198 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LVCFR X Fitness</title>
+  <title>Nebula Studio — Agencia Web Minimalista</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Manrope', sans-serif; }
+    .noise {
+      background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.08) 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+    .glass {
+      background: rgba(12, 12, 12, 0.75);
+      backdrop-filter: blur(24px);
+    }
+  </style>
 </head>
 <body class="bg-black text-white">
-  <main class="min-h-screen flex items-center justify-center">
-    <div class="text-center space-y-4">
-      <h1 class="text-5xl font-black">🔥 LVCFR X FITNESS 🔥</h1>
-      <p>Coaching online personalizado. Resultados reales. Sin humo.</p>
-      <a href="https://wa.me/5493510000000?text=Quiero%20empezar" class="inline-block bg-red-600 hover:bg-red-500 text-white px-6 py-3 rounded-full font-bold">
-        Empezar ahora
-      </a>
-    </div>
-  </main>
+  <div class="min-h-screen noise">
+    <header class="max-w-6xl mx-auto px-6 pt-12 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <span class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+          <span class="text-lg font-semibold tracking-wide">NS</span>
+        </span>
+        <span class="uppercase tracking-[0.4em] text-xs text-white/60">Nebula Studio</span>
+      </div>
+      <nav class="hidden md:flex items-center space-x-8 text-sm text-white/70">
+        <a href="#servicios" class="hover:text-white transition">Servicios</a>
+        <a href="#metodo" class="hover:text-white transition">Método</a>
+        <a href="#casos" class="hover:text-white transition">Casos</a>
+        <a href="#contacto" class="hover:text-white transition">Contacto</a>
+      </nav>
+      <a href="#contacto" class="hidden md:inline-flex text-sm font-semibold bg-white text-black px-4 py-2 rounded-full hover:bg-white/80 transition">Agenda una llamada</a>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+      <section class="grid md:grid-cols-[1.2fr,1fr] gap-12 items-center">
+        <div class="space-y-10">
+          <span class="text-white/40 uppercase tracking-[0.4em] text-xs">Agencia de diseño y desarrollo web</span>
+          <h1 class="text-5xl md:text-6xl font-semibold leading-tight">Creamos experiencias digitales minimalistas que impulsan marcas ambiciosas.</h1>
+          <p class="text-lg text-white/70">Nebula Studio fusiona estrategia, diseño y tecnología para lanzar sitios web de alto impacto. Trabajamos con equipos visionarios que buscan presencia digital impecable, lista para convertir.</p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#contacto" class="inline-flex justify-center items-center bg-white text-black px-6 py-3 rounded-full font-semibold text-sm uppercase tracking-[0.2em] hover:bg-white/80 transition">Iniciar proyecto</a>
+            <a href="#casos" class="inline-flex justify-center items-center border border-white/20 text-white px-6 py-3 rounded-full font-semibold text-sm uppercase tracking-[0.2em] hover:border-white/60 transition">Ver portfolio</a>
+          </div>
+        </div>
+        <div class="glass rounded-3xl border border-white/10 p-10 space-y-8">
+          <p class="text-sm uppercase tracking-[0.3em] text-white/40">Entregas clave</p>
+          <ul class="space-y-6 text-white/80">
+            <li class="flex items-start gap-4">
+              <span class="mt-1 w-2 h-2 bg-white rounded-full"></span>
+              <div>
+                <p class="font-semibold text-white">Identidad digital coherente</p>
+                <p class="text-sm text-white/60">Arquitectura visual y verbal consistente para reforzar la percepción de marca.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="mt-1 w-2 h-2 bg-white rounded-full"></span>
+              <div>
+                <p class="font-semibold text-white">Sitios web ultrarrápidos</p>
+                <p class="text-sm text-white/60">Experiencias responsivas optimizadas para SEO, performance y conversión.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="mt-1 w-2 h-2 bg-white rounded-full"></span>
+              <div>
+                <p class="font-semibold text-white">Estrategia de contenido</p>
+                <p class="text-sm text-white/60">Mensajes alineados al journey del cliente para guiar cada interacción.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="servicios" class="space-y-12">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+          <div>
+            <span class="text-white/40 uppercase tracking-[0.4em] text-xs">Oferta integral</span>
+            <h2 class="text-4xl font-semibold mt-3">Servicios diseñados para abarcar todo el ciclo digital.</h2>
+          </div>
+          <p class="text-white/60 md:max-w-xl">Desde la investigación inicial hasta el mantenimiento posterior al lanzamiento, nuestro equipo especializado cubre cada etapa para asegurar resultados medibles y escalables.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <article class="glass border border-white/10 rounded-3xl p-8 space-y-4">
+            <span class="text-xs uppercase tracking-[0.3em] text-white/40">01</span>
+            <h3 class="text-xl font-semibold">Estrategia &amp; UX Research</h3>
+            <p class="text-white/60 text-sm">Workshops, análisis competitivo, mapas de experiencia y arquitectura de información fundamentada en datos.</p>
+          </article>
+          <article class="glass border border-white/10 rounded-3xl p-8 space-y-4">
+            <span class="text-xs uppercase tracking-[0.3em] text-white/40">02</span>
+            <h3 class="text-xl font-semibold">Diseño UI &amp; Branding</h3>
+            <p class="text-white/60 text-sm">Sistemas visuales minimalistas, tipografías seleccionadas y prototipos interactivos de alta fidelidad.</p>
+          </article>
+          <article class="glass border border-white/10 rounded-3xl p-8 space-y-4">
+            <span class="text-xs uppercase tracking-[0.3em] text-white/40">03</span>
+            <h3 class="text-xl font-semibold">Desarrollo &amp; Performance</h3>
+            <p class="text-white/60 text-sm">Implementación modular, CMS personalizado, integraciones y optimización continua.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="metodo" class="glass border border-white/10 rounded-3xl p-12 space-y-10">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+          <div>
+            <span class="text-white/40 uppercase tracking-[0.4em] text-xs">Metodología</span>
+            <h2 class="text-4xl font-semibold mt-3">Un proceso colaborativo, transparente y orientado a resultados.</h2>
+          </div>
+          <p class="text-white/60 md:max-w-lg">Trabajamos como parte de tu equipo, iterando rápido y entregando valor en cada sprint.</p>
+        </div>
+        <div class="grid md:grid-cols-4 gap-8 text-sm text-white/70">
+          <div class="space-y-3">
+            <p class="text-xs uppercase tracking-[0.3em] text-white/40">Fase 01</p>
+            <h3 class="text-lg font-semibold text-white">Descubrimiento</h3>
+            <p>Entrevistas, inmersión en tu negocio y definición de objetivos claros.</p>
+          </div>
+          <div class="space-y-3">
+            <p class="text-xs uppercase tracking-[0.3em] text-white/40">Fase 02</p>
+            <h3 class="text-lg font-semibold text-white">Diseño</h3>
+            <p>Exploraciones visuales, prototipos navegables y validación con usuarios.</p>
+          </div>
+          <div class="space-y-3">
+            <p class="text-xs uppercase tracking-[0.3em] text-white/40">Fase 03</p>
+            <h3 class="text-lg font-semibold text-white">Desarrollo</h3>
+            <p>Construcción ágil, integraciones y QA exhaustivo en múltiples dispositivos.</p>
+          </div>
+          <div class="space-y-3">
+            <p class="text-xs uppercase tracking-[0.3em] text-white/40">Fase 04</p>
+            <h3 class="text-lg font-semibold text-white">Escala</h3>
+            <p>Iteración continua, analítica en tiempo real y experimentos de conversión.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="casos" class="space-y-12">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+          <div>
+            <span class="text-white/40 uppercase tracking-[0.4em] text-xs">Casos destacados</span>
+            <h2 class="text-4xl font-semibold mt-3">Impacto tangible para marcas digitales.</h2>
+          </div>
+          <p class="text-white/60 md:max-w-xl">Seleccionamos colaboraciones en tecnología, lifestyle y educación que comparten nuestra visión de diseño intencional.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 text-sm">
+          <article class="glass border border-white/10 rounded-3xl p-6 space-y-3">
+            <p class="uppercase tracking-[0.3em] text-xs text-white/40">Aline</p>
+            <h3 class="text-xl font-semibold">Plataforma SaaS B2B</h3>
+            <p class="text-white/60">Rediseño integral, +47% en generación de leads y narrativa de marca renovada.</p>
+          </article>
+          <article class="glass border border-white/10 rounded-3xl p-6 space-y-3">
+            <p class="uppercase tracking-[0.3em] text-xs text-white/40">Rød Studio</p>
+            <h3 class="text-xl font-semibold">E-commerce premium</h3>
+            <p class="text-white/60">Checkout optimizado, experiencia mobile nativa y aumento del 32% en conversión.</p>
+          </article>
+          <article class="glass border border-white/10 rounded-3xl p-6 space-y-3">
+            <p class="uppercase tracking-[0.3em] text-xs text-white/40">Escena</p>
+            <h3 class="text-xl font-semibold">Academia creativa</h3>
+            <p class="text-white/60">Sistema de contenidos modular, LMS personalizado y posicionamiento SEO 360º.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contacto" class="border-t border-white/10">
+      <div class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-[2fr,1fr] gap-12 items-center">
+        <div class="space-y-6">
+          <h2 class="text-4xl font-semibold">Listos para construir la próxima evolución de tu marca.</h2>
+          <p class="text-white/60">Agenda una consultoría sin costo de 30 minutos para mapear oportunidades, definir roadmap y estimar inversión.</p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="mailto:hola@nebulastudio.co" class="inline-flex items-center justify-center bg-white text-black px-6 py-3 rounded-full font-semibold text-sm uppercase tracking-[0.2em] hover:bg-white/80 transition">Reservar consultoría</a>
+            <a href="https://cal.com/nebulastudio" class="inline-flex items-center justify-center border border-white/20 text-white px-6 py-3 rounded-full font-semibold text-sm uppercase tracking-[0.2em] hover:border-white/60 transition">Calendario</a>
+          </div>
+        </div>
+        <div class="space-y-6 text-sm text-white/60">
+          <div>
+            <p class="text-xs uppercase tracking-[0.3em] text-white/40">Contacto directo</p>
+            <p>hola@nebulastudio.co</p>
+            <p>+34 600 000 000</p>
+          </div>
+          <div>
+            <p class="text-xs uppercase tracking-[0.3em] text-white/40">Ubicaciones</p>
+            <p>Barcelona · Ciudad de México · Remoto global</p>
+          </div>
+          <div class="flex space-x-4 text-white/50">
+            <a href="#" class="hover:text-white transition">Behance</a>
+            <a href="#" class="hover:text-white transition">Dribbble</a>
+            <a href="#" class="hover:text-white transition">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 text-center text-xs text-white/40 py-6">
+        © 2024 Nebula Studio. Diseñado para marcas que prefieren lo esencial.
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
