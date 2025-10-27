@@ -3,18 +3,269 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LVCFR X Fitness</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>LVCFR WEB — Diseño y desarrollo de sitios web premium</title>
+  <meta name="description" content="Creamos tu sitio web profesional con IA y diseño humano." />
+  <meta name="keywords" content="diseño web, páginas web, agencia, IA, Argentina" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
 </head>
-<body class="bg-black text-white">
-  <main class="min-h-screen flex items-center justify-center">
-    <div class="text-center space-y-4">
-      <h1 class="text-5xl font-black">🔥 LVCFR X FITNESS 🔥</h1>
-      <p>Coaching online personalizado. Resultados reales. Sin humo.</p>
-      <a href="https://wa.me/5493510000000?text=Quiero%20empezar" class="inline-block bg-red-600 hover:bg-red-500 text-white px-6 py-3 rounded-full font-bold">
-        Empezar ahora
-      </a>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">LVCFR WEB</div>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">
+          <span class="sr-only">Abrir menú</span>
+          <span class="nav-line"></span>
+          <span class="nav-line"></span>
+          <span class="nav-line"></span>
+        </button>
+        <ul id="primary-menu" class="nav-list">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#precios">Precios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#condiciones">Condiciones</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="eyebrow">Extensión digital de LVCFR X</p>
+          <h1>Creamos tu presencia digital. Sin límites.</h1>
+          <p class="subtitle">Sitios web premium diseñados con IA y creatividad humana.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contacto">Solicitar tu web</a>
+            <a class="btn btn-outline" href="#servicios">Ver servicios</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card__badge">Buenos Aires, Argentina</div>
+          <p>LVCFR WEB fusiona inteligencia artificial y diseño humano para entregar plataformas digitales a creadores, marcas personales y empresas que necesitan impactar sin perder autenticidad.</p>
+          <ul>
+            <li>Experiencias premium, listas en menos de una semana.</li>
+            <li>Procesos ágiles, transparentes y centrados en resultados.</li>
+            <li>Soporte humano acompañado de automatización inteligente.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" aria-labelledby="titulo-nosotros">
+      <div class="container">
+        <h2 id="titulo-nosotros" class="section-title">Sobre nosotros</h2>
+        <p class="lead">Somos una agencia independiente con base en Buenos Aires, Argentina. Combinamos la velocidad de la inteligencia artificial con la precisión humana para diseñar experiencias digitales de alto impacto. En menos de una semana, transformamos tu marca en una presencia online sólida y profesional.</p>
+      </div>
+    </section>
+
+    <section id="servicios" class="services" aria-labelledby="titulo-servicios">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="titulo-servicios" class="section-title">Servicios</h2>
+          <p class="section-subtitle">Todo lo que tu presencia digital necesita para ser memorable y efectiva.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <h3>Diseño y desarrollo web</h3>
+            <p>Diseños únicos, modernos y funcionales, implementados con código limpio y optimizado.</p>
+          </article>
+          <article class="service-card">
+            <h3>Optimización para dispositivos móviles</h3>
+            <p>Experiencias fluidas en celulares, tablets y escritorio con performance de alto nivel.</p>
+          </article>
+          <article class="service-card">
+            <h3>Configuración de dominio y hosting</h3>
+            <p>Nos encargamos de toda la configuración técnica para que tu web esté online sin estrés.</p>
+          </article>
+          <article class="service-card">
+            <h3>Integración con redes sociales y WhatsApp</h3>
+            <p>Conectamos tus canales de comunicación para que conviertas desde cualquier punto de contacto.</p>
+          </article>
+          <article class="service-card">
+            <h3>SEO y copywriting básico</h3>
+            <p>Mensajes persuasivos y estructura optimizada para posicionarte y atraer clientes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="precios" class="pricing" aria-labelledby="titulo-precios">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="titulo-precios" class="section-title">Planes y precios</h2>
+          <p class="section-subtitle">Elegí el plan que mejor se adapta al momento de tu proyecto. Todos incluyen acompañamiento experto.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="pricing-card">
+            <div class="pricing-card__header">
+              <h3>Plan Essential</h3>
+              <p class="price"><span>$</span>500<span>USD</span></p>
+            </div>
+            <ul class="pricing-features">
+              <li>Landing page profesional (1 sección)</li>
+              <li>Diseño responsive + SEO básico</li>
+              <li>Integración con redes y WhatsApp</li>
+              <li>Entrega en 3–5 días</li>
+            </ul>
+            <div class="pricing-actions">
+              <a class="btn btn-primary" href="#contacto">Solicitar este plan</a>
+              <a class="btn btn-ghost" href="https://paypal.me/joanlabrana/500" target="_blank" rel="noopener">Pagar ahora</a>
+            </div>
+          </article>
+          <article class="pricing-card pricing-card--highlight">
+            <div class="pricing-card__header">
+              <h3>Plan Pro</h3>
+              <p class="price"><span>$</span>800<span>USD</span></p>
+            </div>
+            <ul class="pricing-features">
+              <li>Web completa (hasta 5 secciones)</li>
+              <li>Dominio .com incluido</li>
+              <li>Diseño personalizado + animaciones</li>
+              <li>Soporte técnico 15 días</li>
+            </ul>
+            <div class="pricing-actions">
+              <a class="btn btn-primary" href="#contacto">Solicitar este plan</a>
+              <a class="btn btn-ghost" href="https://paypal.me/joanlabrana/800" target="_blank" rel="noopener">Pagar ahora</a>
+            </div>
+          </article>
+          <article class="pricing-card">
+            <div class="pricing-card__header">
+              <h3>Plan Elite</h3>
+              <p class="price"><span>$</span>999<span>USD</span></p>
+            </div>
+            <ul class="pricing-features">
+              <li>Tienda online / proyecto premium</li>
+              <li>Catálogo + pagos (MercadoPago / PayPal / Stripe)</li>
+              <li>SEO avanzado + mantenimiento inicial</li>
+              <li>Soporte técnico 30 días</li>
+            </ul>
+            <div class="pricing-actions">
+              <a class="btn btn-primary" href="#contacto">Solicitar este plan</a>
+              <a class="btn btn-ghost" href="https://paypal.me/joanlabrana/999" target="_blank" rel="noopener">Pagar ahora</a>
+            </div>
+          </article>
+        </div>
+        <p class="pricing-note">Aceptamos pagos en dos partes (50% al inicio / 50% al entregar). También realizamos presupuestos personalizados.</p>
+      </div>
+    </section>
+
+    <section class="reasons" aria-labelledby="titulo-razones">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="titulo-razones" class="section-title">Por qué elegirnos</h2>
+          <p class="section-subtitle">Tu proyecto merece un equipo que combine visión, tecnología y ejecución impecable.</p>
+        </div>
+        <div class="reason-grid">
+          <article class="reason-card">
+            <h3>Diseño único y adaptable</h3>
+            <p>Cada web es creada desde cero, alineada a tu identidad y preparada para evolucionar con tu marca.</p>
+          </article>
+          <article class="reason-card">
+            <h3>Entrega rápida</h3>
+            <p>Metodología ágil con entregas en cuestión de días, sin sacrificar calidad ni detalle.</p>
+          </article>
+          <article class="reason-card">
+            <h3>Soporte humano + IA</h3>
+            <p>Automatizamos lo repetitivo para dedicar más tiempo a lo estratégico y acompañarte de forma cercana.</p>
+          </article>
+          <article class="reason-card">
+            <h3>Resultados profesionales</h3>
+            <p>Implementaciones técnicas optimizadas, listas para escalar y convertir desde el primer día.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact" aria-labelledby="titulo-contacto">
+      <div class="container contact-layout">
+        <div class="contact-info">
+          <div class="section-header">
+            <h2 id="titulo-contacto" class="section-title">Contacto</h2>
+            <p class="section-subtitle">Contanos sobre tu proyecto y empecemos a construir tu próxima presencia digital.</p>
+          </div>
+          <ul class="contact-details">
+            <li><span aria-hidden="true">📧</span> Correo: <a href="mailto:lvcfrx@gmail.com">lvcfrx@gmail.com</a></li>
+            <li><span aria-hidden="true">📱</span> WhatsApp: <a href="https://wa.me/541127075473" target="_blank" rel="noopener">+54 11 2707 5473</a></li>
+            <li><span aria-hidden="true">📍</span> Buenos Aires, Argentina</li>
+          </ul>
+        </div>
+        <form class="contact-form" action="#" method="post">
+          <div class="form-field">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="tuemail@ejemplo.com" required />
+          </div>
+          <div class="form-field">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contanos sobre tu proyecto" required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="condiciones" class="legal" aria-labelledby="titulo-condiciones">
+      <div class="container">
+        <details class="legal-details" open>
+          <summary id="titulo-condiciones">Condiciones de servicio — LVCFR WEB</summary>
+          <div class="legal-content">
+            <p><strong>Última actualización:</strong> Octubre 2025</p>
+            <p><strong>Responsable:</strong> Joan Labraña (LVCFR WEB)<br>
+            <strong>Correo:</strong> <a href="mailto:lvcfrx@gmail.com">lvcfrx@gmail.com</a></p>
+            <p><strong>Teléfono:</strong> <a href="https://wa.me/541127075473" target="_blank" rel="noopener">+54 11 2707 5473</a><br>
+            <strong>Ubicación:</strong> Buenos Aires, Argentina</p>
+            <ol>
+              <li><strong>Alcance del servicio:</strong> LVCFR WEB ofrece diseño y desarrollo de sitios web personalizados según el plan contratado. Cualquier desarrollo adicional, integración o contenido fuera del alcance podrá tener un costo extra.</li>
+              <li><strong>Tiempos de entrega:</strong>
+                <ul>
+                  <li>Essential: 3–5 días hábiles</li>
+                  <li>Pro: 7–10 días hábiles</li>
+                  <li>Elite: 10–15 días hábiles</li>
+                </ul>
+                (El plazo corre desde que el cliente entrega todo el material necesario.)
+              </li>
+              <li><strong>Pagos:</strong>
+                <ul>
+                  <li>50% al iniciar, 50% al entregar.</li>
+                  <li>Pagos vía PayPal, MercadoPago o transferencia.</li>
+                  <li>El anticipo no es reembolsable.</li>
+                </ul>
+              </li>
+              <li><strong>Revisión y ajustes:</strong> Una ronda de cambios incluida dentro de los 5 días posteriores a la entrega. Cambios adicionales se presupuestan aparte.</li>
+              <li><strong>Propiedad del sitio:</strong> Una vez abonado el total, el cliente es dueño del sitio. LVCFR WEB puede mostrarlo como ejemplo en su portafolio.</li>
+              <li><strong>Mantenimiento:</strong>
+                <ul>
+                  <li>Essential / Pro: soporte 15 días.</li>
+                  <li>Elite: soporte 30 días.</li>
+                </ul>
+                (Luego puede contratar mantenimiento mensual opcional.)
+              </li>
+              <li><strong>Responsabilidad:</strong> LVCFR WEB no se responsabiliza por fallas en servicios externos (hosting, dominios, etc.) ni por modificaciones hechas por el cliente luego de la entrega.</li>
+              <li><strong>Confidencialidad:</strong> Toda la información del cliente se mantiene confidencial.</li>
+              <li><strong>Jurisdicción:</strong> Este acuerdo se rige por las leyes de la República Argentina. Cualquier conflicto será resuelto en los tribunales de Buenos Aires.</li>
+            </ol>
+            <p>Al contratar nuestros servicios, el cliente acepta estas condiciones.</p>
+          </div>
+        </details>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> LVCFR WEB. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="/js/script.js" defer></script>
 </body>
 </html>
