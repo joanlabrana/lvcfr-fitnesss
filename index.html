@@ -285,7 +285,13 @@
             <h2>Co-creemos el plan ideal para tu empresa</h2>
             <p class="section-subtitle">Escribime y recibí una propuesta personalizada para tu equipo.</p>
           </header>
-          <form class="contact-form" id="contact-form" novalidate>
+          <form
+            class="contact-form"
+            id="contact-form"
+            action="https://formsubmit.co/contacto@nutricionempresarial.com"
+            method="POST"
+            novalidate
+          >
             <div class="form-group">
               <label for="nombre">Nombre</label>
               <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" />
@@ -310,6 +316,8 @@
               <label for="mensaje">Mensaje</label>
               <textarea id="mensaje" name="mensaje" rows="4" required placeholder="¿Qué necesita tu equipo?"></textarea>
             </div>
+            <input type="hidden" name="_subject" value="Nueva consulta de empresa" />
+            <input type="hidden" name="_captcha" value="false" />
             <button type="submit" class="btn primary full">Enviar consulta</button>
             <p class="form-message" role="status" aria-live="polite"></p>
           </form>
