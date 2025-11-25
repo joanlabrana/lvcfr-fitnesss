@@ -94,7 +94,19 @@ document.addEventListener('DOMContentLoaded', () => {
     formMessage.textContent = '';
 
     try {
-      const response = await fetch(form.action, {
+      const ajaxAction = (() => {
+        try {
+          const url = new URL(form.action);
+          if (url.hostname === 'formsubmit.co' && !url.pathname.startsWith('/ajax/')) {
+            url.pathname = `/ajax${url.pathname}`;
+          }
+          return url.toString();
+        } catch (error) {
+          return form.action;
+        }
+      })();
+
+      const response = await fetch(ajaxAction, {
         method: 'POST',
         headers: {
           Accept: 'application/json',

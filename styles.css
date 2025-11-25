@@ -136,8 +136,26 @@ img {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
+  line-height: 1.2;
+  color: inherit;
+}
+
+.brand-mark {
+  width: 46px;
+  height: auto;
+  display: block;
+}
+
+.brand-text {
+  color: inherit;
+}
+
+.site-header .brand {
   color: var(--color-secondary);
 }
 
