@@ -519,6 +519,26 @@ img {
   font-weight: 600;
 }
 
+/* WHATSAPP CTA */
+.whatsapp-card {
+  background: #f7fafc;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  display: grid;
+  gap: 16px;
+  align-items: center;
+}
+
+.whatsapp-card h2 {
+  margin-bottom: 6px;
+}
+
+.whatsapp-card .section-subtitle {
+  margin-bottom: 0;
+}
+
 /* WHATSAPP FAB */
 .whatsapp-fab {
   position: fixed;
@@ -631,6 +651,11 @@ img {
 
   .contact-grid {
     grid-template-columns: 1.1fr 0.9fr;
+  }
+
+  .whatsapp-card {
+    grid-template-columns: 1.2fr auto;
+    padding: 22px 26px;
   }
 }
 
