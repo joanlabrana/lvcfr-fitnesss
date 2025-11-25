@@ -59,10 +59,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Validación mínima del formulario y mensaje de éxito
-  form.addEventListener('submit', (event) => {
+  // Validación mínima del formulario y envío real
+  form.addEventListener('submit', async (event) => {
     event.preventDefault();
     const fields = form.querySelectorAll('[required]');
+    const submitButton = form.querySelector('button[type="submit"]');
     let isValid = true;
 
     fields.forEach((field) => {
@@ -81,9 +82,52 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    formMessage.style.color = '#27ae60';
-    formMessage.textContent = '¡Gracias! Tu consulta fue enviada con éxito. Me contactaré a la brevedad.';
-    form.reset();
+    if (!form.action) {
+      formMessage.textContent = 'No se pudo enviar tu consulta en este momento. Por favor, intentá nuevamente en unos minutos.';
+      formMessage.style.color = '#e11d48';
+      return;
+    }
+
+    submitButton.disabled = true;
+    const defaultLabel = submitButton.textContent;
+    submitButton.textContent = 'Enviando...';
+    formMessage.textContent = '';
+
+    try {
+      const ajaxAction = (() => {
+        try {
+          const url = new URL(form.action);
+          if (url.hostname === 'formsubmit.co' && !url.pathname.startsWith('/ajax/')) {
+            url.pathname = `/ajax${url.pathname}`;
+          }
+          return url.toString();
+        } catch (error) {
+          return form.action;
+        }
+      })();
+
+      const response = await fetch(ajaxAction, {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+        },
+        body: new FormData(form),
+      });
+
+      if (!response.ok) {
+        throw new Error('Error en el envío');
+      }
+
+      formMessage.style.color = '#27ae60';
+      formMessage.textContent = '¡Gracias! Tu consulta fue enviada con éxito. Me contactaré a la brevedad.';
+      form.reset();
+    } catch (error) {
+      formMessage.style.color = '#e11d48';
+      formMessage.textContent = 'No pudimos enviar tu consulta. Revisá tu conexión e intentá nuevamente o escribime por WhatsApp.';
+    } finally {
+      submitButton.disabled = false;
+      submitButton.textContent = defaultLabel;
+    }
   });
 
   // Año automático en el footer
