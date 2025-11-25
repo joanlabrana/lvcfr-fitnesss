@@ -2,19 +2,355 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LVCFR X Fitness</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nutrición Corporativa Saludable | Lic. Alejandra Streitenberger</title>
+  <meta
+    name="description"
+    content="Programas de nutrición corporativa para empresas en Merlo, San Luis y online en toda Argentina."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="bg-black text-white">
-  <main class="min-h-screen flex items-center justify-center">
-    <div class="text-center space-y-4">
-      <h1 class="text-5xl font-black">🔥 LVCFR X FITNESS 🔥</h1>
-      <p>Coaching online personalizado. Resultados reales. Sin humo.</p>
-      <a href="https://wa.me/5493510000000?text=Quiero%20empezar" class="inline-block bg-red-600 hover:bg-red-500 text-white px-6 py-3 rounded-full font-bold">
-        Empezar ahora
-      </a>
+<body>
+  <!-- HEADER + NAV -->
+  <header class="site-header" id="top">
+    <div class="container header-content">
+      <div class="brand">Nutrición Corporativa Saludable</div>
+      <button class="menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-nav" aria-label="Menú principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#programas">Programas</a></li>
+          <li><a href="#beneficios">Beneficios</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#faq">Preguntas frecuentes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Nutricionista – Bienestar y Nutrición Corporativa</p>
+          <h1>Programas de nutrición para empresas que cuidan a su gente</h1>
+          <p class="lead">
+            Mejorá la salud, energía y bienestar de tus empleados con programas corporativos de nutrición diseñados por una
+            profesional.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#contacto">Solicitar propuesta</a>
+            <a class="btn ghost" href="#contacto">Agendar reunión</a>
+          </div>
+          <div class="trust-bar">Programas corporativos en Merlo, San Luis • Atención presencial y online a todo el país</div>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <div class="hero-stat">
+            <span class="stat-number">+100</span>
+            <span class="stat-label">Equipos asesorados</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-number">92%</span>
+            <span class="stat-label">Mayor compromiso</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Acompañamiento</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFICIOS PARA EMPRESAS -->
+    <section class="section" id="beneficios">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow">Beneficios para empresas</p>
+          <h2>Impacto directo en tu equipo</h2>
+          <p class="section-subtitle">Programas prácticos que elevan el bienestar corporativo y los resultados del negocio.</p>
+        </header>
+        <div class="card-grid four">
+          <article class="card feature">
+            <div class="icon-circle" aria-hidden="true">💼</div>
+            <h3>Menos ausentismo</h3>
+            <p>Planes nutricionales que reducen licencias por salud y aumentan la presencia efectiva.</p>
+          </article>
+          <article class="card feature">
+            <div class="icon-circle" aria-hidden="true">⚡</div>
+            <h3>Mayor productividad</h3>
+            <p>Alimentación equilibrada para mejorar energía, concentración y rendimiento diario.</p>
+          </article>
+          <article class="card feature">
+            <div class="icon-circle" aria-hidden="true">🤝</div>
+            <h3>Mejor clima laboral</h3>
+            <p>Actividades que fomentan hábitos saludables, colaboración y motivación en el equipo.</p>
+          </article>
+          <article class="card feature">
+            <div class="icon-circle" aria-hidden="true">🌿</div>
+            <h3>Imagen corporativa saludable</h3>
+            <p>Demostrá compromiso con el bienestar integral y fortalecé tu marca empleadora.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMAS PARA EMPRESAS -->
+    <section class="section tinted" id="programas">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow">Programas para empresas</p>
+          <h2>Soluciones diseñadas para tu organización</h2>
+          <p class="section-subtitle">Elegí el plan que mejor se adapte a la cultura y necesidades de tu equipo.</p>
+        </header>
+        <div class="card-grid three">
+          <article class="card pricing">
+            <h3>Plan Básico</h3>
+            <p class="plan-tag">Charlas de Bienestar</p>
+            <ul>
+              <li>Charlas mensuales de educación alimentaria</li>
+              <li>Guías rápidas para equipos</li>
+              <li>Recetas saludables fáciles</li>
+              <li>Material descargable</li>
+            </ul>
+            <a class="btn full" href="#contacto">Solicitar detalles</a>
+          </article>
+          <article class="card pricing highlight">
+            <h3>Plan Integral</h3>
+            <p class="plan-tag">Nutrición Corporativa</p>
+            <ul>
+              <li>Diagnóstico nutricional del equipo</li>
+              <li>Plan de acción personalizado</li>
+              <li>Workshops interactivos</li>
+              <li>Reportes de avances trimestrales</li>
+            </ul>
+            <a class="btn full primary" href="#contacto">Plan recomendado</a>
+          </article>
+          <article class="card pricing">
+            <h3>Plan Premium</h3>
+            <p class="plan-tag">Acompañamiento Completo</p>
+            <ul>
+              <li>Consultas individuales y grupales</li>
+              <li>Asesoría en comedores y snacks</li>
+              <li>Seguimiento continuo y KPIs</li>
+              <li>Eventos saludables para la empresa</li>
+            </ul>
+            <a class="btn full" href="#contacto">Conocer propuesta</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CÓMO TRABAJA -->
+    <section class="section" id="como-trabaja">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow">Cómo trabaja</p>
+          <h2>Un proceso claro y acompañamiento constante</h2>
+        </header>
+        <ol class="timeline">
+          <li>
+            <div class="bullet">1</div>
+            <div>
+              <h3>Reunión inicial</h3>
+              <p>Comprendemos objetivos, cultura y necesidades del equipo.</p>
+            </div>
+          </li>
+          <li>
+            <div class="bullet">2</div>
+            <div>
+              <h3>Diagnóstico</h3>
+              <p>Análisis del estado actual para definir oportunidades de mejora.</p>
+            </div>
+          </li>
+          <li>
+            <div class="bullet">3</div>
+            <div>
+              <h3>Implementación</h3>
+              <p>Ejecución de programas, talleres y materiales específicos.</p>
+            </div>
+          </li>
+          <li>
+            <div class="bullet">4</div>
+            <div>
+              <h3>Seguimiento y ajustes</h3>
+              <p>Medición de resultados y optimización continua para asegurar impacto.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section class="section tinted" id="sobre-mi">
+      <div class="container about-grid">
+        <div class="about-photo" aria-hidden="true">
+          <div class="photo-placeholder">Foto</div>
+        </div>
+        <div class="about-text">
+          <p class="eyebrow">Sobre mí</p>
+          <h2>Lic. Alejandra Streitenberger</h2>
+          <p class="section-subtitle">Nutricionista – Bienestar y Nutrición Corporativa | Matrícula profesional</p>
+          <p>
+            Soy Alejandra Streitenberger, Licenciada en Nutrición, y desde hace más de X años acompaño a personas y organizaciones a mejorar su salud, energía y bienestar a través de hábitos simples, realistas y sostenibles.
+            Mi enfoque se centra en ayudar a empresas a construir equipos más saludables, motivados y productivos mediante programas de nutrición corporativa diseñados específicamente para el entorno laboral.
+            Trabajo de forma presencial en Merlo, San Luis, y también brindo acompañamiento online para empresas de toda la Argentina.
+            Mi compromiso es ofrecer herramientas claras y aplicables al día a día, siempre adaptadas a la realidad de cada empresa y cada persona.
+          </p>
+          <ul class="credentials">
+            <li>+X años de experiencia</li>
+            <li>Atención presencial en Merlo y online a todo el país</li>
+            <li>Charlas y talleres corporativos</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="section" id="testimonios">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow">Testimonios</p>
+          <h2>Empresas que impulsaron su bienestar</h2>
+        </header>
+        <div class="card-grid three">
+          <article class="card testimonial">
+            <p class="quote">“Implementamos los talleres y en pocas semanas el equipo ya estaba más motivado y con mejores hábitos.”</p>
+            <div class="author">Mariana Torres • RRHH en Grupo Norte</div>
+          </article>
+          <article class="card testimonial">
+            <p class="quote">“Las charlas virtuales mantuvieron a nuestros colaboradores conectados y enfocados en su salud.”</p>
+            <div class="author">Diego Pérez • Director en Andes Tech</div>
+          </article>
+          <article class="card testimonial">
+            <p class="quote">“El seguimiento continuo nos permitió medir mejoras en productividad y satisfacción interna.”</p>
+            <div class="author">Lucía Fernández • CEO en Estudio Verde</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section tinted" id="faq">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow">Preguntas frecuentes</p>
+          <h2>Todo lo que necesitás saber</h2>
+        </header>
+        <div class="accordion" role="tablist">
+          <button class="accordion-item" aria-expanded="false">
+            <span>¿Trabajás con pymes?</span>
+            <span class="chevron" aria-hidden="true">▾</span>
+            <div class="accordion-panel">Sí, adapto los programas a la estructura y recursos de cada pyme.</div>
+          </button>
+          <button class="accordion-item" aria-expanded="false">
+            <span>¿Las charlas pueden ser online?</span>
+            <span class="chevron" aria-hidden="true">▾</span>
+            <div class="accordion-panel">Claro, ofrezco charlas y talleres virtuales para equipos remotos o híbridos.</div>
+          </button>
+          <button class="accordion-item" aria-expanded="false">
+            <span>¿Atendés empresas fuera de San Luis?</span>
+            <span class="chevron" aria-hidden="true">▾</span>
+            <div class="accordion-panel">Sí, acompaño a empresas de todo el país de manera online.</div>
+          </button>
+          <button class="accordion-item" aria-expanded="false">
+            <span>¿Los planes se adaptan al rubro?</span>
+            <span class="chevron" aria-hidden="true">▾</span>
+            <div class="accordion-panel">Diseño propuestas específicas según el rubro, horarios y dinámica de cada empresa.</div>
+          </button>
+          <button class="accordion-item" aria-expanded="false">
+            <span>¿Cómo se mide el impacto?</span>
+            <span class="chevron" aria-hidden="true">▾</span>
+            <div class="accordion-panel">Medimos asistencia, participación, encuestas de bienestar y KPIs definidos con la empresa.</div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section" id="contacto">
+      <div class="container contact-grid">
+        <div>
+          <header class="section-header">
+            <p class="eyebrow">Contacto</p>
+            <h2>Co-creemos el plan ideal para tu empresa</h2>
+            <p class="section-subtitle">Escribime y recibí una propuesta personalizada para tu equipo.</p>
+          </header>
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="correo@empresa.com" />
+            </div>
+            <div class="form-group">
+              <label for="empresa">Empresa</label>
+              <input type="text" id="empresa" name="empresa" required placeholder="Nombre de la empresa" />
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Contame qué necesita tu equipo"></textarea>
+            </div>
+            <button type="submit" class="btn primary full">Enviar consulta</button>
+            <p class="form-message" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+        <div class="contact-info">
+          <div class="info-card">
+            <h3>Datos de contacto</h3>
+            <ul>
+              <li><strong>WhatsApp:</strong> +54 9 266 XXXXXX</li>
+              <li><strong>Email:</strong> contacto@nutricionempresarial.com</li>
+              <li><strong>Ubicación:</strong> Merlo, San Luis (Argentina)</li>
+              <li><strong>Atención:</strong> Presencial y online a todo el país</li>
+              <li><strong>Horarios:</strong> Lunes a Viernes, 9 a 18 hs</li>
+            </ul>
+          </div>
+          <div class="info-card muted">
+            <h3>Beneficios al contacto</h3>
+            <p>Recibí un diagnóstico inicial sin costo y un roadmap breve con las primeras acciones sugeridas para tu equipo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <a class="whatsapp-fab" href="https://wa.me/5492664866066" target="_blank" rel="noreferrer noopener" aria-label="Escribir por WhatsApp">
+    <span aria-hidden="true">💬</span>
+    WhatsApp
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand">Nutrición Corporativa Saludable</div>
+        <p>Programas de bienestar y nutrición corporativa diseñados para equipos modernos.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#programas">Programas</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="footer-meta">
+        <p class="footer-year">© <span id="year"></span> Todos los derechos reservados.</p>
+        <p class="disclaimer">La información brindada no reemplaza la consulta médica individual.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
