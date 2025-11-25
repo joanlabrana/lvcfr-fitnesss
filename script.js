@@ -97,9 +97,14 @@ document.addEventListener('DOMContentLoaded', () => {
       const ajaxAction = (() => {
         try {
           const url = new URL(form.action);
-          if (url.hostname === 'formsubmit.co' && !url.pathname.startsWith('/ajax/')) {
-            url.pathname = `/ajax${url.pathname}`;
+
+          if (url.hostname === 'formsubmit.co') {
+            const normalizedPath = url.pathname.replace(/^\/+/, '');
+            url.pathname = url.pathname.startsWith('/ajax/')
+              ? url.pathname
+              : `/ajax/${normalizedPath}`;
           }
+
           return url.toString();
         } catch (error) {
           return form.action;
